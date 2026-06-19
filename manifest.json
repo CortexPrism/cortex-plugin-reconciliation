@@ -1,0 +1,34 @@
+{
+  "name": "cortex-plugin-reconciliation",
+  "version": "1.0.0",
+  "description": "Automated Reconciliation Engine — Match transactions across bank feeds, payment processors, and accounting systems",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-reconciliation",
+  "homepage": "https://cortexprism.io/marketplace/plugins/reconciliation",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "recon_match", "description": "Match and reconcile transactions", "params": [] },
+    {
+      "name": "recon_discrepancies",
+      "description": "List unreconciled discrepancies",
+      "params": []
+    },
+    {
+      "name": "recon_suggest_entries",
+      "description": "Suggest correcting journal entries",
+      "params": []
+    },
+    {
+      "name": "recon_generate_report",
+      "description": "Generate reconciliation report",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
